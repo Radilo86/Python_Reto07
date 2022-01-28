@@ -30,7 +30,7 @@ if estadoCodigo == 200:
 
     # Recorremos las cabeceras para extraer los datos que nos interesan unicamente y no todo el codigo completo de
     #   la cabecera (header).
-    for i, titular in enumerate(titulares):
+    for titular in titulares:
         # con find buscamos todos los enlaces del html y devolvemos su salida en modo texto con getText(), si no
         #   hacemos la conversion a texto, nos devuelve todo el codigo html.
         noticia = titular.find('a').getText()
